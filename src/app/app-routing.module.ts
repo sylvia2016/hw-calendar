@@ -1,11 +1,10 @@
+import { CalendarComponent } from './calendar/calendar.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  {
-    path: '',
-    children: []
-  }
+  { path: '', redirectTo: 'calendar', pathMatch: 'full' },
+  { path: 'calendar', component: CalendarComponent }
 ];
 
 @NgModule({

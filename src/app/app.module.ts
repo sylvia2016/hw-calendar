@@ -5,10 +5,16 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DayComponent } from './day/day.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { EventComponent } from './event/event.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DayComponent,
+    CalendarComponent,
+    EventComponent
   ],
   imports: [
     BrowserModule,
